@@ -1,3 +1,4 @@
 venv/
 djchat/db.sqlite3
 djchat/.env
+djchat/__pycache__
