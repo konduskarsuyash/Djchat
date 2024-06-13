@@ -18,7 +18,7 @@ class Server(models.Model):
     member = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="server_members")
     
     def __str__(self):
-        return self.name
+        return f"{self.name}/{self.id}"
         
     
     
