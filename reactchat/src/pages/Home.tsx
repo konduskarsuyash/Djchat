@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box,CssBaseline } from '@mui/material'
 import PrimaryAppBar from './template/PrimaryAppBar'
+import PrimaryDraw from './template/PrimaryDraw'
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
   <Box sx={{display:"flex"}}>
     <CssBaseline/>
     <PrimaryAppBar/>
+    <PrimaryDraw></PrimaryDraw>
     Home
   </Box>
   )
