@@ -5,10 +5,12 @@ from rest_framework.exceptions import ValidationError, AuthenticationFailed
 from .models import Server
 from rest_framework.response import Response
 from django.db.models import Count
+from rest_framework.permissions import IsAuthenticated
 from .schema import server_list_docs    
 
 class ServerListViewSet(viewsets.ViewSet):
     queryset = Server.objects.all()
+    permission_classes = [IsAuthenticated]
     
     @server_list_docs
     def list(self, request):
