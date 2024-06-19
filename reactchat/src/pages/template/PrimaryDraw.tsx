@@ -42,7 +42,7 @@ const PrimaryDraw = () => {
     }),
 
     ...(!open && {
-        ...openedMixin(),
+        ...closedMixin(),
         "& .MuiDrawer-paper":closedMixin(),
     }),
   }));
